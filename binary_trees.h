@@ -8,12 +8,12 @@
 #include <limits.h>
 
 /**
- * struct binary_tree_s - Binary tree node
+ * struct binary_tree_s - Bin
  *
- * @n: Integer stored in the node
- * @parent: Pointer to the parent node
- * @left: Pointer to the left child node
- * @right: Pointer to the right child node
+ * @n: Inte
+ * @parent: P
+ * @left: P
+ * @right: P
  */
 struct binary_tree_s
 {
@@ -26,13 +26,13 @@ typedef struct binary_tree_s binary_tree_t;
 typedef struct binary_tree_s bst_t;
 typedef struct binary_tree_s avl_t;
 typedef struct binary_tree_s heap_t;
-/*  linked list for advanced 101 the levelorder */
+
 /**
- * struct link_s - structure for advanced tasks
+ * struct link_s - st
  *
- * @n: depth of node specified
- * @node: node of tree to store
- * @next: next node of the linked list
+ * @n: d
+ * @node: no
+ * @next: ne
  */
 typedef struct link_s
 {
@@ -40,26 +40,45 @@ typedef struct link_s
 	struct binary_tree_s const *node;
 	struct link_s *next;
 } link_t;
-/*  ----------------- mandatory task ---------------------------------*/
+
 void binary_tree_print(const binary_tree_t *);
+
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
+
 binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);
+
 binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value);
+
 void binary_tree_delete(binary_tree_t *tree);
+
 int binary_tree_is_leaf(const binary_tree_t *node);
+
 int binary_tree_is_root(const binary_tree_t *node);
+
 void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int));
+
 void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));
+
 void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));
+
 size_t binary_tree_height(const binary_tree_t *tree);
+
 size_t binary_tree_depth(const binary_tree_t *tree);
+
 size_t binary_tree_size(const binary_tree_t *tree);
+
 size_t binary_tree_leaves(const binary_tree_t *tree);
+
 size_t binary_tree_nodes(const binary_tree_t *tree);
+
 int binary_tree_balance(const binary_tree_t *tree);
+
 int binary_tree_is_full(const binary_tree_t *tree);
+
 int binary_tree_is_perfect(const binary_tree_t *tree);
+
 binary_tree_t *binary_tree_sibling(binary_tree_t *node);
+
 binary_tree_t *binary_tree_uncle(binary_tree_t *node);
 
-#endif /* _BINARY_TREES_H_ */
+#endif /* f*/

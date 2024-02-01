@@ -1,20 +1,22 @@
 #include "binary_trees.h"
 /**
- * binary_tree_inorder - print elements of tree using in-order traversal
- * @tree: tree to go through
- * @func: function to use
- * Return: Nothing
+ * binary_tree_inorder - p
+ * @tree: t
+ * @func: f
+ * Return: N
  */
-void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int))
+void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int))/* comment*/
 {
-	if (tree == NULL || func == NULL)
+	if (tree == NULL || func == NULL)/* comment*/
 	{
-		return;
+		return;/* comment*/
 	}
-	else
+	else/* comment*/
 	{
-		binary_tree_inorder(tree->left, func);
+		binary_tree_inorder(tree->left, func);/* comment*/
+		/* comment*/
 		func(tree->n);
+		/* comment*/
 		binary_tree_inorder(tree->right, func);
 	}
 }
