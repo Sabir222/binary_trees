@@ -1,7 +1,7 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_node - C
+ * binary_tree_node - Cy
  * @parent: n
  * @value: V
  * Return: t
